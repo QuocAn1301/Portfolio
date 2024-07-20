@@ -31,10 +31,7 @@
                             <a href="#skills" class="nav__link">Skills</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
+                            <a href="#project" class="nav__link">Project</a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">Contact</a>
@@ -133,6 +130,7 @@
                 </div>
             </div>
         </section>
+        <!-- qualification -->
         <section class="qualification section">
             <h2 data-heading="My Journey" class="section__title ">Qualification</h2>
             <div class="qualification__container container grid">
@@ -286,10 +284,95 @@
                 </div>
             </div>
         </section>
+        <!-- project -->
+        <section class="project section" id="project">
+            <h2 data-heading="My portfolio" class="section__title">Recent project</h2>
+            <div class="project__filters">
+                <span class="project__item active-project" data-filter="all">All</span>
+                <span class="project__item " data-filter=".web">Web</span>
+                <span class="project__item " data-filter=".design">Design</span>
+            </div>
+            <div class="project__container container grid">
+                <div class="project__card mix web">
+                    <img src="assets/img/DS1.png" alt="" class="project__img">
+                    <h3 class="project__title">E-commerce UI/UX design</h3>
+                    <span class="project__button">Demo
+                        <i class="uil uil-arrow-right project__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">E-commerce UI/UX design</h3>
+                        <p class="details__description">Design the user interface/experience for the product.</p>
+                        <ul class="details__info">
+                            <li>Created: <span>4th Dec 2020</span></li>
+                            <li>Technologies: <span>Figma</span></li>
+                            <li>View: <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project__card mix design">
+                    <img src="assets/img/DS1.png" alt="" class="project__img">
+                    <h3 class="project__title">E-commerce UI/UX design</h3>
+                    <span class="project__button">Demo
+                        <i class="uil uil-arrow-right project__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">E-commerce UI/UX design</h3>
+                        <p class="details__description">Design the user interface/experience for the product.</p>
+                        <ul class="details__info">
+                            <li>Created: <span>4th Dec 2020</span></li>
+                            <li>Technologies: <span>Figma</span></li>
+                            <li>View: <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project__card mix web">
+                    <img src="assets/img/WD1.png" alt="" class="project__img">
+                    <h3 class="project__title">Website Selling Toys</h3>
+                    <span class="project__button">Demo
+                        <i class="uil uil-arrow-right project__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Frontend & Backend Developer</h3>
+                        <p class="details__description">Create user interfaces and backend systems for e-commerce
+                            websites, ensuring smooth functionality and secure transactions.</p>
+                        <ul class="details__info">
+                            <li>Created: <span>May 6, 2024</span></li>
+                            <li>Technologies: <span>HTML, CSS, JS, Laravel, MySQL</span></li>
+                            <li>View: <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio popup -->
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/img/DS1.png" alt="" class="portfolio__popup-img">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">E-commerce UI/UX design</h3>
+                            <p class="details__description">Design the user interface/experience for the product.
+                            </p>
+                            <ul class="details__info">
+                                <li>Created: <span>4th Dec 2020</span></li>
+                                <li>Technologies: <span>Figma</span></li>
+                                <li>View: <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
 
+    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
