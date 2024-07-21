@@ -13,6 +13,9 @@
 
 <body>
     <!---- sidebar ---->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -42,6 +45,9 @@
             <div class="btn__share">
                 <i class="uil uil-share-alt social__share"></i>
             </div>
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
         </nav>
     </aside>
     <!---- Main ---->
@@ -63,9 +69,9 @@
                     </div>
 
                 </div>
-                <img src="./assets/img/QA Avt.png" alt="" class="home__img">
+                <img src="assets/img/QA Avt.png" alt="" class="home__img">
                 <div class="home__data">
-                    <h1 class="home__title">Hi, I'm Quoc An</h1>
+                    <h1 class="home__title">Hi, I'm Vuong Quoc An</h1>
                     <h3 class="home__subtitle">Frontend developer</h3>
                     <p class="home__description">As an intern, I hope to have suitable projects for me to gain more
                         experience</p>
@@ -105,7 +111,7 @@
                 <img src="assets/img/QA Avt.jpg" alt="" class="about__img">
 
                 <div class="about__data">
-                    <div class="about__heading">Hi, I,m Quoc An, Based In Viet Nam</div>
+                    <div class="about__heading">Hi, I,m Vuong Quoc An, Based In Viet Nam</div>
                     <p class="about__description">Web developer, A student with limited experience but eager to learn
                         more
                         about web technologies and UI/UX design.</p>
@@ -129,43 +135,46 @@
                     <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i> Contact Me</a>
                 </div>
             </div>
+            <section class="qualification section">
+                <h2 data-heading="My Journey" class="section__title ">Qualification</h2>
+                <div class="qualification__container container grid">
+                    <div class="experience">
+                        <h3 class="qualification__title"><i
+                                class="uil uil-graduation-cap qualification__icon"></i>Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <h3 class="timeline__title">FPT Polytechnic Tay Nguyen College </h3>
+                                <p class="timeline__text"> Web Developer </p>
+                                <span class="timeline__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    05/2022 - Present
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h3 class="qualification__title"><i
+                                class="uil uil-briefcase-alt qualification__icon"></i>Experience
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <!-- <div class="circle__dot">
+                                </div>
+                                <h3 class="timeline__title">FPT Polytechnic Tay Nguyen College </h3>
+                                <p class="timeline__text"> Web Developer </p>
+                                <span class="timeline__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    05/2022 - Present
+                                </span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
         <!-- qualification -->
-        <section class="qualification section">
-            <h2 data-heading="My Journey" class="section__title ">Qualification</h2>
-            <div class="qualification__container container grid">
-                <div class="experience">
-                    <h3 class="qualification__title"><i class="uil uil-graduation-cap qualification__icon"></i>Education
-                    </h3>
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <h3 class="timeline__title">FPT Polytechnic Tay Nguyen College </h3>
-                            <p class="timeline__text"> Web Developer </p>
-                            <span class="timeline__date">
-                                <i class="uil uil-calendar-alt"></i>
-                                05/2022 - Present
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="experience">
-                    <h3 class="qualification__title"><i class="uil uil-briefcase-alt qualification__icon"></i>Experience
-                    </h3>
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <!-- <div class="circle__dot">
-                            </div>
-                            <h3 class="timeline__title">FPT Polytechnic Tay Nguyen College </h3>
-                            <p class="timeline__text"> Web Developer </p>
-                            <span class="timeline__date">
-                                <i class="uil uil-calendar-alt"></i>
-                                05/2022 - Present
-                            </span> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!--  Skills  -->
         <section class="skills section" id="skills">
             <h2 data-heading="My Abilities" class="section__title">My Experience</h2>
@@ -293,22 +302,6 @@
                 <span class="project__item " data-filter=".design">Design</span>
             </div>
             <div class="project__container container grid">
-                <div class="project__card mix web">
-                    <img src="assets/img/DS1.png" alt="" class="project__img">
-                    <h3 class="project__title">E-commerce UI/UX design</h3>
-                    <span class="project__button">Demo
-                        <i class="uil uil-arrow-right project__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">E-commerce UI/UX design</h3>
-                        <p class="details__description">Design the user interface/experience for the product.</p>
-                        <ul class="details__info">
-                            <li>Created: <span>4th Dec 2020</span></li>
-                            <li>Technologies: <span>Figma</span></li>
-                            <li>View: <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="project__card mix design">
                     <img src="assets/img/DS1.png" alt="" class="project__img">
                     <h3 class="project__title">E-commerce UI/UX design</h3>
@@ -319,9 +312,31 @@
                         <h3 class="details__title">E-commerce UI/UX design</h3>
                         <p class="details__description">Design the user interface/experience for the product.</p>
                         <ul class="details__info">
-                            <li>Created: <span>4th Dec 2020</span></li>
+                            <li>Created: <span>4th Dec 2023</span></li>
                             <li>Technologies: <span>Figma</span></li>
-                            <li>View: <span><a href="#">www.domain.com</a></span></li>
+                            <li>View:
+                                <a
+                                    href="https://www.figma.com/proto/VPPQWuAbd9nuqZfkOks7TD/ASM-Nhom-1?node-id=10-2596&t=RvECVckfy1Pa2aPM-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=101%3A685&show-proto-sidebar=1"><span>TDA
+                                        Shop</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project__card mix   web">
+                    <img src="assets/img/WD2.png" alt="" class="project__img">
+                    <h3 class="project__title">Spotify Clone</h3>
+                    <span class="project__button">Demo
+                        <i class="uil uil-arrow-right project__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Frontend developer</h3>
+                        <p class="details__description">In this project I duplicate the frontend part</p>
+                        <ul class="details__info">
+                            <li>Created: <span>July 22, 2024</span></li>
+                            <li>Technologies: <span>React + Vite & Tailwindcss</span></li>
+                            <li>View: <span><a href="https://quocan1301.github.io/SpotifyClone/">Spotify
+                                        Clone</a></span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -338,7 +353,7 @@
                         <ul class="details__info">
                             <li>Created: <span>May 6, 2024</span></li>
                             <li>Technologies: <span>HTML, CSS, JS, Laravel, MySQL</span></li>
-                            <li>View: <span><a href="#">www.domain.com</a></span></li>
+                            <li>View: <span><a>www.vqan.shop</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -368,7 +383,108 @@
                 </div>
             </div>
         </div>
+        <!-- contact -->
+        <section class="contact section" id="contact">
+            <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class="uil uil-envelope-edit contact__card-icon"></i>
+                        <h3 class="contact__card-title">Email</h3>
+                        <span class="contact__card-data">vuongquocancv131@gmail.com</span>
+                        <span class="contact__button"> Write me
+                            <i class="uil uil-arrow-right contact__button-icon"></i>
+                        </span>
+                    </div>
 
+                    <div class="contact__card">
+                        <i class="uil uil-phone contact__card-icon"></i>
+                        <h3 class="contact__card-title">Phone</h3>
+                        <span class="contact__card-data">+84 365298174</span>
+                        <span class="contact__button"> Write me<i
+                                class="uil uil-arrow-right contact__button-icon"></i></span>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="uil uil-facebook-messenger contact__card-icon"></i>
+                        <h3 class="contact__card-title">Messenger</h3>
+                        <span class="contact__card-data">https://m.me/VQA01</span>
+                        <span class="contact__button"> Write me<i
+                                class="uil uil-arrow-right contact__button-icon"></i></span>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <form action="" class="contact__form">
+                        <div class="input__container">
+                            <input type="text" class="input" required>
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="email" class="input" required>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="tel" class="input">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <div class="input__container textarena">
+                            <textarea name="" id="" cols="30" class="input" rows="10" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <button type="submit" class="button"><i class="uil uil-navigator button__icon"></i> Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Vuong Quoc An</h1>
+                        <span class="footer__subtitle">Frontend developer</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+
+                        <li>
+                            <a href="#project" class="footer__link">Project</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/VQA01" class="footer__social">
+                            <i class="uil uil-facebook-f"></i></a>
+                        <a href="#" class="footer__social"><i class="uil uil-linkedin"></i></a>
+                        <a href="https://github.com/QuocAn1301" class="footer__social"><i
+                                class="uil uil-github"></i></a>
+                    </div>
+                </div>
+                <p class="footer__copy">&#169; Vuong Quoc An. All right reserved</p>
+            </div>
+        </footer>
     </main>
 
 
